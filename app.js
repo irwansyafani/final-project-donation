@@ -3,7 +3,7 @@ const session = require('express-session')// sessions
 const routes = require('./routes')
 
 const app = express()
-const PORT = process.env.port || config.httpPort || 5000
+const PORT = process.env.port || 5000
 
 app.set('view engine', 'ejs')
 
