@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "db_group_13",
-    "host": "localhost",
+    "username": "ipmznyrfuxdnjr",
+    "password": "aa3fe52fb403b1cb79fe01ecd54dd45ff9145fb77d6de9edb5ace094854d0f34",
+    "database": "d4aie2fkr1j8e2",
+    "host": "ec2-54-147-209-121.compute-1.amazonaws.com",
     "dialect": "postgres"
   }
 }
