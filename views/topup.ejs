@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(213, 252, 255);
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>TOP UP</h1>
+    <form action="/donors/topup/<%= data.id %>" method="POST">
+        <select name="nominal" id="nominal">
+            <option value=5000 >5,000</option>
+            <option value=10000 >10,000</option>
+            <option value=20000 >20,000</option>
+            <option value=25000 >25,000</option>
+            <option value=50000 >50,000</option>
+            <option value=100000 >100,000</option>
+        </select><br><br>
+
+        <input type="submit" value="Confirm">
+    </form>
+</body>
+</html>

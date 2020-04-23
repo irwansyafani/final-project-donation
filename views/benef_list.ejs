@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(213, 252, 255);
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>LIST BENEFICIARY</h1>
+    <a href="/beneficiary/add"><button>ADD BENEFICIARY</button></a><br><br>
+    <table border style="margin-left: 240px;">
+        <thead>
+            <th>INSTITUTION</th>
+            <th>REAL TIME CREDIT</th>
+            <th>ACTION</th>
+        </thead>
+        <tbody>
+            <% if (data.length > 0) { %>
+            <% for(let i = 0 ; i < data.length ; i++) { %>
+                <tr>
+                    <td><%= data[i].institution %></td>
+                    <td><%= data[i].realtime_credit() %></td>
+                    <% if (data[i].get_button()) { %>
+                        <td><a href="/beneficiary/<%= data[i].id %>/delete"><button>FULFILLED</button></a></td>
+                    <% } %>
+                </tr>
+            <% } %>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            align-items: center;
+            background-color: rgb(213, 252, 255);
+            margin-top: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORM EDIT</h1>
+    <h4>Self Identity</h4><br><br>
+    <form action="/donors/edit/<%= data.id %>" method="POST">
+        <label for="donor_name">DONOR NAME:</label>
+        <input type="text" id="donor_name" name="donor_name" value="<%= data.donor_name %>"><br><br>
+        
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" value="<%= data.email %>"><br><br>
+
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" value="<%= data.password %>"><br><br>
+
+        <label for="confirm_password">CONFIRM PASSWORD:</label>
+        <input type="password" id="confirm_password" name="confirm_password" value="<%= data.password %>"><br><br>
+
+        <input type="submit" value="EDIT">
+    </form>
+</body>
+</html>
