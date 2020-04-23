@@ -1,11 +1,14 @@
 {
   "name": "final-project-with-ugai-pribadi",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.14.1"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
