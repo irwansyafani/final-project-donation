@@ -3,7 +3,7 @@ const session = require('express-session')// sessions
 const routes = require('./routes')
 
 const app = express()
-const port = process.env.port ||  3000
+const PORT = process.env.PORT || 5000
 
 app.set('view engine', 'ejs')
 
@@ -18,4 +18,4 @@ app.use(session({
 
 app.use('/', routes)
 
-app.listen(port, () => { console.log('http://localhost:3000/ connect to port:', port) })
+app.listen(PORT, () => { console.log('http://localhost:3000/ connect to port:', PORT) })
