@@ -22,6 +22,10 @@ router.get('/login', (req, res, next) => {
 router.post('/login', (req, res, next) => {
     console.clear()
     console.log('Accessing routes: LOGIN, method: POST')
+    const { email, password } = req.body
+    if (email == 'admin@gmail.com' && password == 'admin') {
+        res.redirect('/admin/login')
+    }
     next()
 }, DonorController.logged_in_donor)
 

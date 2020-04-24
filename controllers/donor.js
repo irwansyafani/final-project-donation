@@ -30,15 +30,12 @@ class DonorController {
 
     static logged_in_donor(req, res, next) {
         const { email, password } = req.body
-        if (email == 'admin@gmail.com' && password == 'admin') { res.redirect('/admin/login') } // login donor
-        else {
             Donor.findOne({where: { email, password }})
             .then(data => {
                 req.session.userId = data.id
                 res.redirect(`/donors/dashboard/${data.id}`)  
             })
-            .catch(err => { res.send(err.message) })            
-        }
+            .catch(err => { res.send(err.message) })
     }
 
     static logout(req, res) {
@@ -47,7 +44,8 @@ class DonorController {
 
     static dashboard_donor(req, res) { // minta email biar bisa login
         const { id } = req.params
-        if (req.session.userId) {
+        console.log(req.session)
+        if (req.session.userId == id) {
             Donor.findByPk(+id)
                 .then(data => { 
                     DonorBeneficiary.findAll({ where: { DonorId: id }, include: [ Beneficiary ] })
@@ -57,7 +55,7 @@ class DonorController {
                  })
                 .catch(err => { res.send(err.message) })
         } else {
-            res.send(`You're not Authorized`)
+            res.redirect('/donors/login')
         }
     }
 
