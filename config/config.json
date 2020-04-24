@@ -1,5 +1,19 @@
 {
   "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "db_group_13",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
     "username": "ipmznyrfuxdnjr",
     "password": "aa3fe52fb403b1cb79fe01ecd54dd45ff9145fb77d6de9edb5ace094854d0f34",
     "database": "d4aie2fkr1j8e2",

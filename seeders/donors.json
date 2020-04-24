@@ -1,0 +1,17 @@
+[
+    {
+        "donor_name": "Naruto",
+        "email": "naruto@gmail.com",
+        "password": "1"
+    },
+    {
+        "donor_name": "Sasuke",
+        "email": "sasuke@gmail.com",
+        "password": "2"
+    },
+    {
+        "donor_name": "Gara",
+        "email": "gara@gmail.com",
+        "password": "3"
+    }
+]

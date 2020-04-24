@@ -1,0 +1,20 @@
+[
+    {
+        "institution": "YAYASAN HARAPAN IBU",
+        "target": 500000,
+        "head_of_institution": "Abdi",
+        "credit": 0
+    },
+    {
+        "institution": "YAYASAN BAKTI IBU",
+        "target": 250000,
+        "head_of_institution": "Budi",
+        "credit": 0
+    },
+    {
+        "institution": "YAYASAN PELITA",
+        "target": 75000,
+        "head_of_institution": "Ahmad",
+        "credit": 0
+    }
+]
