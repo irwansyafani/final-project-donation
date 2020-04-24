@@ -4,13 +4,13 @@ function send(to, text, value) {
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'irwanlearn@gmail.com',
-      pass: 'Irwanlearn1ng'
+      user: 'pairprojectgroup5@gmail.com',
+      pass: 'pairproject5!'
     }
   });
   
   var mailOptions = {
-    from: 'irwanlearn@gmail.com',
+    from: 'pairprojectgroup5@gmail.com',
     to: to,
     subject: `YOU'VE GOT TOKEN, LET'S CLAIM IT!👊`,
     text: `YOUR TOKEN : ${text}\n VALUE: ${value}`
